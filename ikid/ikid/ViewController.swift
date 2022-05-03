@@ -17,3 +17,35 @@ class ViewController: UIViewController {
 
 }
 
+class BasicViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func btnDismissPressed(_ sender: Any) {
+        print("Dismiss was pressed")
+        self.dismiss(animated: true)
+    }
+}
+
+class PunViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func btnDismissPressed(_ sender: Any) {
+        print("Dismiss was pressed")
+        self.dismiss(animated: true)
+    }
+}
+
+class InsensitiveViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func btnDismissPressed(_ sender: Any) {
+        print("Dismiss was pressed")
+        self.dismiss(animated: true)
+    }
+}
