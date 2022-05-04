@@ -26,4 +26,9 @@ class PunchlineViewController: UIViewController {
         print("Dismiss was pressed")
         self.dismiss(animated: true)
     }
+    
+    @IBAction func extraDismissPressed(_ sender: Any) {
+        print("Dismiss was pressed")
+        self.presentingViewController?.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true)
+    }
 }
